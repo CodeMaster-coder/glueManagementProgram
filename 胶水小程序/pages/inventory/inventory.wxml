@@ -1,0 +1,136 @@
+<!--pages/inventory/inventory.wxml-->
+<!--index.wxml-->
+<view class="inputbox">
+  <view class="title1">
+    <view class="subtitle1">
+        型号选择
+    </view>
+    <view class="subtitle2">
+        数量输入
+    </view>
+</view>
+<view class="content1">
+    <view class="subcontent" >
+        <input placeholder-class="place-holder" type="text" class="searchcube"  value="{{inputVal}}" bindinput="inputTyping"  />
+    </view>
+    <view class="subcontent" >
+      <input placeholder-class="place-holder" type="text" class="searchcube"  value="{{inputNum}}" bindinput="inputNumber"/>
+  </view>
+</view>
+  <view class="title1">
+    <view class="subtitle1">
+        生产日期
+    </view>
+    <view class="subtitle2">
+        有效日期
+    </view>
+</view>
+<view class="content1">
+ <picker mode="date" value="{{inputProductDate}}" bindchange="bindDateChange1" >
+    <view class="subcontent" >
+      {{inputProductDate}}
+    </view>
+     </picker>
+    <picker mode="date" value="{{inputEffectiveDate}}" bindchange="bindDateChange2" >
+    <view class="subcontent" >
+      {{inputEffectiveDate}}
+    </view>
+     </picker>
+</view>
+<view class="title1">
+    <view class="subtitle1">
+        凭证号码
+    </view>
+</view>
+<view class="content1">
+    <view class="subcontent" >
+        <input placeholder-class="place-holder" type="text"  value="{{inputVoucher}}"  bindinput="inputVouVal"  />
+    </view>
+</view>
+<view class="operate">
+  <view class="suboperate1" bindtap = "addition">
+    添加
+  </view>
+  <view class="suboperate2" bindtap="hideInput">
+    清空
+  </view>
+</view>
+</view>
+  <scroll-view class='scroll-view' wx:if='{{viewShowed}}' scroll-y>
+  <view wx:for="{{carList}}" wx:key="index" class="msg-item " >
+    <view class='user-name' bindtap='name' data-index="{{index}}" >{{item}}</view>
+  </view>
+  </scroll-view>
+  <form class="page__bd" bindsubmit="formSubmit" bindreset="formReset">
+    <scroll-view scroll-x='true'>
+<view class="generalList">
+  <view class="title2">
+    电极杆补库清单
+  </view>
+  <view class="t-head">
+    <view class="th1">
+      型号
+    </view>
+    <view class="th2">
+        数量
+    </view>
+        <view class="th3">
+        生产日期
+    </view>
+        <view class="th4">
+        有效日期
+    </view>
+            <view class="th5">
+        凭证号
+    </view>
+    <view class="th6">
+        操作
+    </view>
+  </view>
+  <view class="t-body">
+    <view class='tb1'>
+        <view name = 'model' wx:for='{{model}}' wx:key="index" data-index="{{index}}">
+            {{item}}
+        </view>
+    </view>
+    <view class="tb2">
+        <view name = 'modelNumber' wx:for='{{modelNumber}}' wx:key="index" data-index="{{index}}">
+            {{item}}
+        </view>
+    </view>
+        <view class="tb3">
+    <view name = 'productDate' wx:for='{{productDate}}' wx:key="index" data-index="{{index}}">
+            {{item}}
+        </view>
+    </view>
+    <view class="tb4">
+        <view name = 'effectiveDate' wx:for='{{effectiveDate}}' wx:key="index" data-index="{{index}}">
+            {{item}}
+        </view>
+    </view>
+    <view class="tb5">
+        <view name = 'voucher' wx:for='{{voucher}}' wx:key="index" data-index="{{index}}">
+            {{item}}
+        </view>
+    </view>
+    <view>
+        <view class="btnDel" wx:for='{{del}}' wx:key="index" data-index="{{index}}" bindtap="delelement">
+            {{item}}
+        </view>
+    </view>
+</view>
+<view class="btn-area">
+
+  <button class = 'btn_sub' form-type="submit">提交</button>
+  
+  <button class = 'btn_sub'  form-type="reset">重置</button>
+  
+  </view>
+</view>
+</scroll-view>
+</form>
+
+
+
+
+
