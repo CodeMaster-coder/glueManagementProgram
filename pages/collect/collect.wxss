@@ -1,0 +1,98 @@
+/* pages/exchange/exchange.wxss */
+/* pages/demo05/demo05.wxss */
+
+.radio{
+  display:flex;
+  margin-top: 20rpx;
+}
+radio .wx-radio-input{
+width: 25rpx;
+height: 25rpx;
+
+border-radius: 50%;
+}
+.workShop1{
+  margin-top: 20rpx;
+  display: flex;
+  
+}
+.workShop{   
+  width: 350rpx;
+  height: 25rpx;
+  text-align: left;
+  line-height: 25rpx;
+  border: 4rpx solid#66CCFF;
+border-radius: 10rpx;
+  padding: 10rpx;
+}
+.inc{
+  margin-left: 10rpx;
+  padding: 0;
+  width: 50rpx;
+  height: 50rpx;
+  
+  line-height: 50rpx;
+}
+.dec{
+  margin-left: -130rpx;
+  padding: 0;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.changeBody1{
+     width: 368rpx;
+  height: 25rpx;
+  text-align: left;
+  line-height: 25rpx;
+  border: 4rpx solid#66CCFF;
+border-radius: 10rpx;
+  padding: 0rpx;
+}
+.changeBody2{
+  width: 365rpx;
+height: 25rpx;
+text-align: left;
+line-height: 25rpx;
+border: 4rpx solid#66CCFF;
+border-radius: 10rpx;
+ padding: 0rpx;
+}
+.btn-area{
+  display: flex;
+}
+.btn_sub{
+  margin-top: 20rpx;
+  padding: 0;
+  width: 150rpx;
+  height: 62rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.red2{
+  margin-left: 50rpx;
+}
+/* 下拉内容 */
+.select_box {
+  background-color: #fff;
+  padding: 0 20rpx;
+  width: 220rpx;
+
+  position: relative;
+  right: 0;
+
+  overflow: hidden;
+  text-align: left;
+  animation: myfirst 0.5s;
+  font-size: 30rpx;
+  margin-left: 200rpx;
+}
+.select_one {
+  padding-left: 20rpx;
+  width: 100%;
+  height: 60rpx;
+  position: relative;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
