@@ -262,7 +262,7 @@ Page({
 
 
 
-  //表单提交按钮
+  //表单提交按钮。
   formSubmit:  util.throttle(function (ev) {
     var that =this,
     customIndex = that.data.customIndex,
