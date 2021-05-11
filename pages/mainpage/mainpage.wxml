@@ -2,45 +2,50 @@
 <!--
 1text相当于web中的span标签-->
 <view class='bc_img'>
-    <image src="https://i.loli.net/2021/03/05/dP5ebhi6cyULupQ.jpg" class="bc_img"></image>
+    <image src="https://i.loli.net/2021/05/10/6dXx8RNPtzZB5OG.jpg" class="bc_img"></image>
 </view>
-
-
-<view class='storage'>
+<view class="mainBox">
+<view class="firstLine">
+<view class="inventory">
     <navigator url="/pages/inventory/inventory">
-        <image src="https://i.loli.net/2021/03/08/UwHZzeDNtia59oA.png" class="storage-img">
+    <image src="https://i.loli.net/2021/05/10/5ryYpPICWn6ewOo.png" class="storage-img">
         </image>
-        <text class="text">
-            入库
-        </text>
-    </navigator>
-
-</view>
-<view class='storage'>
-    <navigator url="/pages/recover/recover">
-        <image src="https://i.loli.net/2021/03/08/qLaRPrmhkD4X5vO.png" class="storage-img">
-        </image>
-        <text class="text">
-            回收
-        </text>
+        <view class="title">
+        胶水入库
+        </view>
     </navigator>
 </view>
-<view class='storage'>
-    <navigator url="/pages/collect/collect">
-        <image src="https://i.loli.net/2021/03/08/6wPzs2Tr3fAijqF.png" class="storage-img">
-        </image>
-        <text class="text">
-            领用
-        </text>
-    </navigator>
-</view>
-<view class='storage'>
+<view class="inventory">
     <navigator url="/pages/exchange/exchange">
-        <image src="https://i.loli.net/2021/03/08/1geHZWPT5COuSAc.png" class="storage-img">
+    <image src="https://i.loli.net/2021/05/10/65FlmkifSjVBbA2.png" class="storage-img">
         </image>
-        <text class="text">
-            更换
-        </text>
+        <view class="title">
+        胶水更换
+        </view>
     </navigator>
 </view>
+</view>
+<view class="secondLine">
+<view class="inventory">
+    <navigator url="/pages/collect/collect">
+    <image src="https://i.loli.net/2021/05/10/O7KHgb15DMQtpNw.png" class="storage-img">
+        </image>
+        <view class="title">
+        胶水领用
+        </view>
+    </navigator>
+</view>
+<view class="inventory">
+    <navigator url="/pages/recover/recover">
+    <image src="https://i.loli.net/2021/05/10/mtj9BQlr3RLeDV8.png" class="storage-img">
+        </image>
+        <view class="title">
+        废胶回收
+        </view>
+    </navigator>
+</view>
+</view>
+</view>
+
+
 

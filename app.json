@@ -14,5 +14,6 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+
   "sitemapLocation": "sitemap.json"
 }
