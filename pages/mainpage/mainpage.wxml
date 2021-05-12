@@ -7,7 +7,7 @@
 <view class="mainBox">
 <view class="firstLine">
 <view class="inventory">
-    <navigator url="/pages/inventory/inventory">
+    <navigator url="/pages/inventoryLogin/inventoryLogin">
     <image src="https://i.loli.net/2021/05/10/5ryYpPICWn6ewOo.png" class="storage-img">
         </image>
         <view class="title">

@@ -5,6 +5,7 @@
     "pages/collect/collect",
     "pages/exchange/exchange",
     "pages/inventory/inventory",
+    "pages/inventoryLogin/inventoryLogin",
     "pages/index/index",
     "pages/logs/logs"
   ],
