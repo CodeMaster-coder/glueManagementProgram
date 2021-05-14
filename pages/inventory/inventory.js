@@ -96,7 +96,12 @@ if(!model1 || !modelNumber1 || !productDate1 || !effectiveDate1 || !voucher1){
     productDate:this.data.productDate,
     effectiveDate:this.data.effectiveDate,
     voucher:this.data.voucher,
-    del:this.data.del
+    del:this.data.del,
+    inputVal: "", 
+    inputNum: "",
+    inputProductDate:"",
+    inputEffectiveDate:"",
+    inputVoucher:"",
   });
   console.log(this.data.model);
   console.log(this.data.modelNumber);
@@ -182,8 +187,11 @@ if(!model1 || !modelNumber1 || !productDate1 || !effectiveDate1 || !voucher1){
 
   var that = this,
   model = that.data.model,
-  modelNumber = that.data.modelNum;
-  if (model != '' & modelNumber != '') {
+  modelNumber = that.data.modelNum,
+  productDate = that.data.productDate,
+  effectiveDate = that.data.effectiveDate,
+  voucher = that.data.voucher;
+  if (model != '' & modelNumber != '' & productDate != '' & effectiveDate != '' & voucher != '') {
    wx.request({
      url: 'https://www.zqzqsmile.xyz/inventory_glue/login',
      data:{
