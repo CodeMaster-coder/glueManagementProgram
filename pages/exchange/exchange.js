@@ -516,6 +516,8 @@ Page({
     ],
     //个数计数器
     counter: 1,
+    inputProductDate:"",
+    inputEffectiveDate:"",
   },
   //多列自定义选择器改变value的方法
   bindCustomPickerChange: function (e) {
@@ -607,6 +609,18 @@ Page({
       counter: this.data.counter
     })
   },
+  bindDateChange1: function(e) {
+    // console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      inputProductDate: e.detail.value
+    })
+  },
+  bindDateChange2: function(e) {
+    // console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      inputEffectiveDate: e.detail.value
+    })
+  },
 
   //表单提交按钮
   formSubmit:  util.throttle(function (ev) {
@@ -638,7 +652,9 @@ data:{
           duration: 2000
         })
         that.setData({
-          changebody:''
+          changebody:'',
+          inputProductDate:"",
+          inputEffectiveDate:"",
         })}     
 }
     })
@@ -658,6 +674,8 @@ data:{
     this.setData({
       label1:'',
       changebody:'',
+      inputProductDate:"",
+     inputEffectiveDate:"",
     })
   },
  
