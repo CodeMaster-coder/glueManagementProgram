@@ -628,9 +628,11 @@ Page({
     customIndex = that.data.customIndex,
     postData = ev.detail.value,
     label1 = postData.label1,
-    changebody = postData.changebody;
+    changebody = postData.changebody,
+    inputProductDate = that.data.inputProductDate,
+    inputEffectiveDate = that.data.inputEffectiveDate;
       
-    if (label1 != '' & that.data.onlyArray[0][customIndex[0]] != '' & changebody != '') {
+    if (label1 != '' & that.data.onlyArray[0][customIndex[0]] != '' & changebody != '' &  inputProductDate != '' & inputEffectiveDate != '') {
 wx.request({
 url: 'https://www.zqzqsmile.xyz/exchange_glue/login',
 data:{
@@ -640,12 +642,15 @@ data:{
     gun:that.data.onlyArray[2][customIndex[2]],
     model:that.data.onlyArray[3][customIndex[3]],
     counterNum:that.data.counter,
-    changebody:postData.changebody},
+    changebody:postData.changebody,
+    inputProductDate:that.data.inputProductDate,
+    inputEffectiveDate:that.data.inputEffectiveDate,
+  },
     method:'POST',
     header:{'content-type': 'application/x-www-form-urlencoded'},
     success:function(res){
       console.log(res.data);
-      if (label1 != '' & that.data.onlyArray[0][customIndex[0]] != '' & changebody != '' & res.data.status == true){
+      if (label1 != '' & that.data.onlyArray[0][customIndex[0]] != '' & changebody != '' &  inputProductDate != '' & inputEffectiveDate != '' & res.data.status == true){
         wx.showToast({
           title: '提交成功！！！',
           icon: 'none', 
