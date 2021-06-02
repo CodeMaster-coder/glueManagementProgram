@@ -1,6 +1,10 @@
 {
   "pages":[
     "pages/mainpage/mainpage",
+    "pages/storagelogin/storagelogin",
+    "pages/storageview/storageview",
+    "pages/substorage/substorage",
+    "pages/storage/storage",
     "pages/recover/recover",
     "pages/collect/collect",
     "pages/exchange/exchange",

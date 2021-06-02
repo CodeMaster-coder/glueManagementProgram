@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view class = 'box1'>
+    <navigator url="/pages/substorage/substorage" class='storage'>
+        <image src="https://i.loli.net/2021/03/15/lv34kLYCDJPROrn.png" class="storage-img">
+        </image>
+        <view class="text">
+        <text>
+            按区域查询
+        </text>
+    </view>
+    </navigator>
+
+</view>
+
+<view class = 'box2'>
+    <navigator url="/pages/storagelogin/storagelogin" class='storage'>
+        <image src="https://i.loli.net/2021/03/15/Pwdvx1GRYJB3sHf.png" class="storage-img1">
+        </image>
+        <view class="text">
+        <text>
+            胶水房库存
+        </text>
+    </view>
+    </navigator>
+
+</view>

@@ -45,6 +45,22 @@
     flex-direction: row;
     margin: 30rpx auto;
 }
+.thirdLine{
+    width: 650rpx;
+    height: 290rpx;
+    display: flex;
+    flex-direction: row;
+    margin: 30rpx auto;
+}
+.storage{
+    text-align: center;
+    margin-left: 16rpx;
+    width: 290rpx;
+    height: 290rpx;
+    background-color: #bdd7ee;
+    border-radius: 30rpx;
+    box-shadow:  3px 3px 3px #90979e;
+}
   
 
   

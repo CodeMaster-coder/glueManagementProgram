@@ -1,0 +1,93 @@
+.top{
+  display:flex;
+  flex-direction: row;
+
+
+}
+
+.top-selected{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;  /*水平*/
+  align-items: center; /*垂直*/
+  border:3rpx solid black;
+  border-radius: 20rpx;
+  height: 60rpx;
+  width: 300rpx;
+  margin-left: auto;
+}
+.top-selected image{
+  width: 50rpx;
+  height: 50rpx;
+
+}
+.select_box {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;  /*水平*/
+  background-color: #fff;
+  padding: 0 20rpx;
+  width: 300rpx;
+  float: right;
+  position: absolute;
+
+  z-index: 1;
+  overflow: hidden;
+  text-align: left;
+  animation: myfirst 0.5s;
+  font-size: 30rpx;
+  margin-left: 80rpx;
+  margin-top: 80rpx;
+}
+.select_one {
+  padding-left: 20rpx;
+
+  height: 60rpx;
+  position: relative;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
+.btnquery{
+  display: flex;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  justify-content: center;
+}
+.title {
+  margin-top: 40rpx;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 70rpx;
+  align-items: center;
+ }
+ .subtitle {
+  width: 50%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 70rpx;
+  align-items: center;
+ }
+ .content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+   margin-top: 10rpx;
+}
+.namecontent{
+  display: flex;
+  flex-direction: column;
+  width: 355rpx;
+  height: 85rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 85rpx;
+  border-bottom: 3rpx solid white;
+}
+.subContent{
+  border-bottom: 3rpx solid white;
+  background-color:  	#87CEFA;
+}

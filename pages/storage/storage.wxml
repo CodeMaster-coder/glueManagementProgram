@@ -1,0 +1,17 @@
+<!--pages/jsstorage/jsstorage.wxml-->
+<view class='top'>
+    <view class='top-text'> 胶水房库存</view>
+   </view>
+
+   <view class="content">
+<view class="namecontent">
+<view class="subContent" wx:for="{{model}}" wx:key = 'unique'>
+  {{item}}
+</view>
+</view>
+<view class="namecontent">
+<view class="subContent" wx:for="{{storage}}" wx:key = 'unique'>
+  {{item}}
+</view>
+</view>
+</view>

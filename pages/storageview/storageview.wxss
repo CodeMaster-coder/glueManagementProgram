@@ -1,0 +1,43 @@
+/* pages/search/search.wxss */
+.box1{
+
+  width: 720rpx;
+  height: 150rpx;
+  border: solid 7rpx #239ede;
+  border-radius: 30rpx;
+  margin-left: 10.5rpx;
+  margin-top: 30rpx;
+  background-color: #DCDCDC;
+  }
+  .storage{
+      display: flex;
+      flex-direction: row; 
+  }
+  .storage-img{
+      margin-top: 30rpx;
+      margin-left: 150rpx;
+      width: 90rpx;
+      height: 90rpx;
+  }
+  .text{
+      font-size: 50rpx;
+      margin-left: 80rpx;
+      margin-top: -20rpx;
+  
+  }
+  .box2{
+  
+      width: 720rpx;
+      height: 150rpx;
+      border: solid 7rpx #239ede;
+      border-radius: 30rpx;
+      margin-left: 10.5rpx;
+      margin-top: 15rpx;
+      background-color: #DCDCDC;
+      }
+  .storage-img1{
+      margin-top: 30rpx;
+      margin-left: 150rpx;
+      width: 90rpx;
+      height: 90rpx;
+  }

@@ -45,6 +45,17 @@
     </navigator>
 </view>
 </view>
+<view class="thirdLine">
+<view class="storage">
+    <navigator url="/pages/storageview/storageview">
+    <image src="https://i.loli.net/2021/06/01/fHgEPNlTQLWwq3A.png" class="storage-img">
+        </image>
+        <view class="title">
+        库存查看
+        </view>
+    </navigator>
+</view>
+</view>
 </view>
 
 

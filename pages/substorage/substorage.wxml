@@ -1,0 +1,44 @@
+
+
+    <!-- 下拉框 -->
+
+<view class='top'>
+
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+    <view class="select_box" wx:if="{{select}}">
+     <view wx:for="{{areas}}" wx:key="unique">
+      <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+     </view>
+    </view>
+
+    <button class = 'btnquery' bindtap = "query">查询</button>
+  </view>
+
+    
+<!-- 下拉需要显示的列表 -->
+
+
+
+   <view class="title" >
+       <view class="subtitle" >
+          型号 
+       </view>
+       <view class="subtitle" >
+        数量
+     </view>
+   </view>
+   <view class="content">
+<view class="namecontent">
+<view class="subContent" wx:for="{{model}}" wx:key = 'unique'>
+  {{item}}
+</view>
+</view>
+<view class="namecontent">
+<view class="subContent" wx:for="{{number}}" wx:key = 'unique'>
+  {{item}}
+</view>
+</view>
+</view>
